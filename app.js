@@ -6,7 +6,7 @@ app.set("view engine", "ejs");
 app.get("/", function(req, res){
   res.render('home');
 });
-app.get("/about", function(req, res){
+app.get("about", function(req, res){
   res.render('about');
 });
 
