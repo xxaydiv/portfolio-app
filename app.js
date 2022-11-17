@@ -1,6 +1,12 @@
 const express = require('express');
 const app = express();
 
+const https = require('https');
+const cookieParser = require('cookie-parser');
+var XMLHttpRequest = require('xmlhttprequest').XMLHttpRequest;
+
+app.use(cookieParser());
+
 const MongoClient = require('mongodb').MongoClient;
 
 const CONNECTION_URL = "mongodb+srv://xxaydiv:test@nanostack.l8nsecq.mongodb.net/?retryWrites=true&w=majority";
