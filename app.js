@@ -8,17 +8,17 @@ const DATABASE_NAME = "Cluster0"; // you can change the database name
 var database, collection;
 app.use(express.urlencoded({extended: true}));
 
-MongoClient.connect(CONNECTION_URL, { useNewUrlParser: true }, (error, client) => {
-  if(error) throw error;
+//MongoClient.connect(CONNECTION_URL, { useNewUrlParser: true }, (error, client) => {
+  //if(error) throw error;
 
-  database = client.db(DATABASE_NAME);
-  collection = database.collection("newcollection"); // you can change the collection name
+  //database = client.db(DATABASE_NAME);
+  //collection = database.collection("newcollection"); // you can change the collection name
 
   // Start the application after the database connection is ready
-  app.listen(3000, () => {
-    console.log('This app is running on port 3000')
-  });
-});
+  //app.listen(3000, () => {
+    //console.log('This app is running on port 3000')
+  //});
+//});
 app.set("view engine", "ejs");
 
 app.get("/", function(req, res){
