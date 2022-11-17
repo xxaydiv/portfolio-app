@@ -3,7 +3,7 @@ const app = express();
 
 const MongoClient = require('mongodb').MongoClient;
 
-const CONNECTION_URL = "mongodb+srv://xxaydiv:hS0VL63yNv0fmHJL@nanostack.l8nsecq.mongodb.net/?retryWrites=true&w=majority";
+const CONNECTION_URL = "mongodb+srv://xxaydiv:test@nanostack.l8nsecq.mongodb.net/?retryWrites=true&w=majority";
 
 const DATABASE_NAME = "nanostack"; // you can change the database name
 var database, collection;
