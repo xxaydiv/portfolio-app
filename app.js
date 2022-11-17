@@ -25,7 +25,7 @@ app.post("/", function(req, res){
     console.log('saved to database')
     res.redirect('/') // or do something else here
   })
-};
+});
 
 app.get("/about", function(req, res){
   res.render('about');
