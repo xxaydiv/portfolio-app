@@ -22,9 +22,9 @@ MongoClient.connect(CONNECTION_URL, { useNewUrlParser: true }, (error, client) =
   collection = database.collection("newcollection"); // you can change the collection name
 
   //Start the application after the database connection is ready
-  app.listen(3000, () => {
-    console.log('This app is running on port 3000')
-  });
+  //app.listen(3000, () => {
+    //console.log('This app is running on port 3000')
+  //});
 });
 app.set("view engine", "ejs");
 
@@ -40,7 +40,7 @@ app.post("/", function(req, res){
   function formv3(){
     // Create the new request 
     var xhr = new XMLHttpRequest();
-    var url = 'https://api.hsforms.com/submissions/v3/integration/submit/20070455/316f926f-1f29-4165-bcf7-88d2640fae1ef'
+    var url = 'https://api.hsforms.com/submissions/v3/integration/submit/20070455/316f926f-1f29-4165-bcf7-88d2640fae1e'
     
     // Example request JSON:
     var data = {
@@ -93,6 +93,6 @@ app.post("/", function(req, res){
 app.get("/about", function(req, res){
   res.render('about');
 });
-//app.listen(3000, () => {
-  //  console.log('This app is running on port 3000');
-    //});
+app.listen(3000, () => {
+    console.log('This app is running on port 3000');
+    });
