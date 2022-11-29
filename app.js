@@ -10,7 +10,7 @@ const CLIENT_SECRET = process.env.CLIENT_SECRET;
 // Supports a list of scopes as a string delimited by ',' or ' ' or '%20'
 const SCOPES = (process.env.SCOPE.split(/ |, ?|%20/) || ['crm.objects.contacts.write']).join(' ');
 
-const REDIRECT_URI = `http://localhost:${port}/oauth-callback`;
+const REDIRECT_URI = `https://sleepy-bell-bottoms-jay.cyclic.app/oauth-callback`;
 
 const refreshTokenStore = {};
 const accessTokenCache = new NodeCache({ deleteOnExpire: true });
